@@ -1,1 +1,48 @@
-@use 'global' as *;
+@use "global" as *;
+
+.header {
+    margin-top: rem(8);
+    height: rem(127);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    transition: .3s;
+    border-bottom: 5px solid $black;
+    @include mq() {
+        border-width: 5px;
+    }
+}
+
+//スクロールしたら透過用
+.header.js-opacity {
+    opacity: 1;
+}
+
+.header__inner {
+    padding: 0 rem(35);
+    height: inherit;
+    @include mq() {
+        padding-left: rem(32);
+        padding-right: 0;
+    }
+}
+
+.header__body {
+    height: inherit;
+    display: flex;
+    gap: rem(111);
+    align-items: center;
+}
+
+.header__logo {
+    max-width: rem(269);
+}
+
+.header__pc-nav {
+
+    @include mq() {
+
+    }
+}

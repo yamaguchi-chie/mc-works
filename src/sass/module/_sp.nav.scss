@@ -1,0 +1,34 @@
+@use 'global' as *;
+
+.sp-nav {
+    
+
+    display: none;
+    @include mq() {
+        transition: all .5s ease 0s;
+        padding-top: rem(192);
+        padding-bottom: rem(208);
+        overflow-y: scroll;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        right: -105%;
+        z-index: 888;
+        background-color: #111;
+    }
+}
+
+.sp-nav.js-open {
+    right: 0%;
+}
+
+.sp-nav__item 
+a {
+    display: block;
+    letter-spacing: .12em;
+    padding: rem(16) 0 rem(15);
+}
+
+.sp-nav__items {
+    text-align: center;
+}
