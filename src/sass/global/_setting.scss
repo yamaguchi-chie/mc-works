@@ -14,6 +14,7 @@ $padding-sp: 20px;
 ////////////////////
 
 $base-font-family: "Noto Sans", serif;
+// $base-font-family: "Noto Sans Display", serif;
 $second-font-family: "";
 // ※検証ツールでしっかり反映されているか確認する
 
@@ -34,6 +35,7 @@ $white: #fff;
 $bg: #fffef4;
 $accent: #8a3c00;
 $red: #ff0000;
+$gray: #c3c0c0;
 
 body {
   font-family: $base-font-family;

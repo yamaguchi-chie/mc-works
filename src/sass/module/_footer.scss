@@ -1,1 +1,67 @@
 @use 'global' as *;
+
+.footer {
+    margin-bottom: rem(70);
+}
+
+.footer__nav {
+    max-width: rem(1160);
+    margin-right: 0;
+    margin-left: rem(33);
+    border-bottom: 1px solid $gray;
+    padding-bottom: rem(21);
+}
+
+.footer__items {
+    display: flex;
+    align-items: center;
+}
+
+.footer__item a {
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: rem(16);
+    line-height: calc(29 / 16);
+    font-weight: $semi-bold;
+    padding-right: rem(16);
+    padding-bottom: rem(20);
+}
+
+.footer__item + .footer__item a {
+    padding-left: rem(16);
+}
+
+.footer__body {
+    margin-top: rem(53);
+    display: flex;
+    align-items: center;
+    gap: rem(42);
+}
+
+.footer__logo {
+    max-width: rem(269);
+}
+
+.footer__adress {
+
+}
+
+.footer__adress div {
+    display: flex;
+    align-items: center;
+    gap: rem(37);
+}
+
+.footer__text {
+    font-size: rem(16);
+    line-height: calc(28 / 16);
+}
+
+.footer__copyright {
+    max-width: rem(1160);
+    margin-left: rem(33);
+    margin-top: rem(55);
+    font-size: rem(13);
+    line-height: calc(28 / 13);
+}
+
