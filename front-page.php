@@ -29,6 +29,9 @@
             <?php endwhile; endif; ?>
             <?php wp_reset_postdata(); ?>
         </ul>
+        <div class="top-news__btn">
+            <a href="<?php echo esc_url(home_url("news")); ?>" class="btn btn--contact">more</a>
+        </div>
     </div>
 </section>
 

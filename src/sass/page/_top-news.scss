@@ -46,3 +46,8 @@
 .news__contents {
     width:  calc(100% - rem(320));
 }
+
+.top-news__btn {
+    max-width: rem(480);
+    margin: rem(80) auto 0;
+}

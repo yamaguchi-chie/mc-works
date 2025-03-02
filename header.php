@@ -26,7 +26,7 @@
               <li class="pc-nav__item"><a href="<?php echo esc_url(home_url()); ?>">top</a></li>
               <li class="pc-nav__item"><a href="<?php echo esc_url(home_url("company")); ?>">company</a></li>
               <li class="pc-nav__item"><a href="<?php echo esc_url(home_url("works")); ?>">works</a></li>
-              <li class="pc-nav__item"><a href="<?php echo esc_url(home_url("info")); ?>">info</a></li>
+              <li class="pc-nav__item"><a href="<?php echo esc_url(home_url("news")); ?>">news</a></li>
               <li class="pc-nav__item"><a href="<?php echo esc_url(home_url("contact")); ?>">contact</a></li>
             </ul>
           </nav>
@@ -45,7 +45,7 @@
         <li class="sp-nav__item"><a href="<?php echo esc_url(home_url()); ?>">top</a></li>
         <li class="sp-nav__item"><a href="<?php echo esc_url(home_url("company")); ?>">company</a></li>
         <li class="sp-nav__item"><a href="<?php echo esc_url(home_url("works")); ?>">works</a></li>
-        <li class="sp-nav__item"><a href="<?php echo esc_url(home_url("info")); ?>">info</a></li>
+        <li class="sp-nav__item"><a href="<?php echo esc_url(home_url("news")); ?>">news</a></li>
         <li class="sp-nav__item"><a href="<?php echo esc_url(home_url("contact")); ?>">contact</a></li>
       </ul>
     </nav>

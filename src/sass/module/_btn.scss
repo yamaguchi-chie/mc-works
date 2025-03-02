@@ -1,0 +1,30 @@
+@use 'global' as *;
+
+.btn {
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    font-size: rem(18);
+    font-weight: $bold;
+    line-height: calc(40 / 18);
+    padding: rem(9) rem(15) rem(8);
+    border-radius: rem(10);
+    transition: all .3s ease 0s;
+    cursor: pointer;
+    border: 1px solid $main-black;
+}
+
+.btn:hover {
+    color: $white;
+    background-color: $accent;
+    border-color: $white;
+}
+
+.btn--contact {
+    padding: rem(16) rem(15) rem(15);
+}
+
+.btn--submit {
+    padding: rem(12) rem(15) rem(11);
+}
