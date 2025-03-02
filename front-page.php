@@ -6,7 +6,7 @@
 <section class="top-news">
     <div class="top-news__inner inner">
         <div class="top-news__title">
-            <h2 class="section-title"><span>news</span>お知らせ</h2>
+            <h2 class="section-title txt"><span>news</span>お知らせ</h2>
         </div>
         <ul class="top-news__items">
             <?php $args = array(

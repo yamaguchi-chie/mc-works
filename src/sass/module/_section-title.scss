@@ -1,0 +1,19 @@
+@use 'global' as *;
+
+.section-title {
+    margin-top: rem(16);
+    text-align: center;
+    letter-spacing: 0.4em;
+}
+
+.section-title span {
+    display: block;
+    text-transform: capitalize;
+    font-size: rem(43);
+    line-height: calc(50 / 43);
+    letter-spacing: 0em;
+}
+
+.section-title--contact {
+    font-weight: $bold;
+}
