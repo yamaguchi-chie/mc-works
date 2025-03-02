@@ -1,0 +1,6 @@
+@use 'global' as *;
+
+.txt {
+    font-size: rem(16);
+    line-height: calc(28 / 16);
+}

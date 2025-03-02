@@ -1,0 +1,48 @@
+@use 'global' as *;
+
+.top-news {
+    padding-top: rem(130);
+    padding-bottom: rem(221);
+}
+
+.top-news__inner {
+
+}
+
+.inner {
+
+}
+
+.top-news__title {
+
+}
+
+.top-news__items {
+    margin-top: calc(rem(133) - rem(48));
+}
+
+.top-news__item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $border-gray;
+    padding-bottom: rem(38);
+    padding-top: rem(48);
+}
+
+.top-news__item {
+
+}
+
+.top-news__meta {
+    padding-left: rem(80);
+    width: rem(320);
+}
+
+.top-news__time {
+    font-size: rem(16);
+    line-height: calc(28 / 16);
+}
+
+.news__contents {
+    width:  calc(100% - rem(320));
+}
