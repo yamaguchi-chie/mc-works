@@ -35,6 +35,6 @@
     </div>
 </section>
 
-
+<?php get_template_part('template/contact'); ?>
 
 <?php get_footer(); ?>
