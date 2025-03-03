@@ -18,7 +18,7 @@
         <div class="header__body">
           <!-- logo  -->
           <h1 class="header__logo">
-            <a href=""><img src="<?php echo get_template_directory_uri(); ?>/dist/assets/images/common/logo.webp" alt="" width="" height="" loading="lazy" decoding="async"></a>
+            <a href="<?php echo esc_url(home_url()); ?>"><img src="<?php echo get_template_directory_uri(); ?>/dist/assets/images/common/logo.webp" alt="" width="" height="" loading="lazy" decoding="async"></a>
           </h1>
           <!-- PCナビメニュー -->
           <nav class="header__pc-nav pc-nav">
