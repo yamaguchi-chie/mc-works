@@ -1,1 +1,52 @@
 @use 'global' as *;
+
+.header-hamburger {
+    display: none;
+    @include mq() {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: rem(10);
+        width: rem(50);
+        height: rem(70);
+        padding: rem(5) 0 rem(11);
+        z-index: 9999;
+        transition: .3s;
+    }
+}
+
+.header-hamburger span:nth-child(1),
+.header-hamburger span:nth-child(2),
+.header-hamburger span:nth-child(3) {
+    display: block;
+    background-color: $main-black;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: rem(30);
+    height: 2px;
+    transition: all .3s ease 0s;
+}
+
+.header-hamburger span:nth-child(1){
+    top: 33%;
+}
+.header-hamburger span:nth-child(1).js-open {
+    transform: rotate(-45deg);
+    top: 50%;
+}
+
+.header-hamburger span:nth-child(2){
+    top: 50%;
+}
+.header-hamburger span:nth-child(2).js-open {
+   display: none;
+}
+
+.header-hamburger span:nth-child(3){
+    top: 67%;
+}
+.header-hamburger span:nth-child(3).js-open {
+    transform: rotate(225deg);
+    top: 50%;
+}

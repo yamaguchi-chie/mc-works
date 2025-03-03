@@ -2,6 +2,9 @@
 
 .pc-nav {
     height: inherit;
+    @include mq() {
+        display: none;
+    }
 }
 
 .pc-nav__items {
@@ -13,12 +16,6 @@
 .pc-nav__item {
     height: inherit;
     padding: 0 rem(23);
-
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    @include mq() {
-    }
 }
 
 .pc-nav__item a {
@@ -34,8 +31,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @include mq() {
-    }
 }
 
 .pc-nav__item a::after {

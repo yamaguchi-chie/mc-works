@@ -11,7 +11,9 @@
     transition: .3s;
     border-bottom: 5px solid $black;
     @include mq() {
+        margin-top: 0;
         border-width: 5px;
+        height: rem(70);
     }
 }
 
@@ -24,8 +26,9 @@
     padding: 0 rem(35);
     height: inherit;
     @include mq() {
-        padding-left: rem(32);
+        padding-left: rem(20);
         padding-right: 0;
+        padding-bottom: 5px;
     }
 }
 
@@ -34,15 +37,14 @@
     display: flex;
     gap: rem(111);
     align-items: center;
+    @include mq() {
+        gap: 0;
+    }
 }
 
 .header__logo {
     max-width: rem(269);
-}
-
-.header__pc-nav {
-
     @include mq() {
-
+        max-width: rem(170);
     }
 }
