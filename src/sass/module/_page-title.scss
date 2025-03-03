@@ -1,0 +1,15 @@
+@use 'global' as *;
+
+.page-title {
+    text-align: center;
+    letter-spacing: 0.4em;
+}
+
+.page-title span {
+    margin-bottom: rem(20);
+    display: block;
+    text-transform: uppercase;
+    font-size: rem(64);
+    line-height: calc(50 / 64);
+    letter-spacing: 0em;
+}

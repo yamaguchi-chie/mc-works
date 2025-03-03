@@ -30,6 +30,66 @@ function my_script_init() {
   }
   add_action("wp_enqueue_scripts", "my_script_init");
 
+  /* ------------------------------------------------------------------------------ 
+ブログ記事をカスタム投稿で出力
+------------------------------------------------------------------------------ */
+function add_custom_post() {
+  register_post_type(
+    'works',
+    array(
+      'label' => '施工実績',
+      'public' => true,
+      'has_archive' => true,
+      // ブロックエディターを有効化するするかどうか
+      'show_in_rest' => true,
+      'menu_position' => 5,
+      // 親子関係を持たせるか
+      'hierarchical' => false,
+      'supports' => array(
+        'title',
+        'editor',
+        'thumbnail',
+        'revisions',
+        'excerpt',
+        'custom-fields',
+        'page-attributes',
+        'author',
+      )
+    )
+  );
+}
+add_action('init', 'add_custom_post');
+/* ------------------------------------------------------------------------------
+カスタム投稿のタクソノミー出力
+------------------------------------------------------------------------------ */
+function add_taxonomy() {
+  //施工実績カテゴリ
+  register_taxonomy(
+    // カスタムタクソノミー名
+    'works-cat',
+    // 適応投稿タイプ
+    'works',
+    array(
+      // 管理画面上の名前
+      'label' => '施工実績カテゴリ',
+      'singular_label' => '施工実績カテゴリ',
+      'labels' => array(
+        'add_works_item' => '施工実績カテゴリを追加'
+      ),
+      'public' => true,
+      // 管理画面上に編集画面を表示するか
+      'show_ui' => true,
+      'show_in_nav_menus' => true,
+      // ブロックエディターの管理画面に出力するかどうか
+      'show_in_rest' => true,
+      // カスタムタクソノミーに階層を持たせるか
+      'hierarchical' => true
+    )
+  );
+}
+add_action('init', 'add_taxonomy');
+
+
   //ページネーション
   // function add_prev_post_link_class($output) {
   //   return str_replace('<a href=', '<a class="pagination__link txt" href=', $output); 
