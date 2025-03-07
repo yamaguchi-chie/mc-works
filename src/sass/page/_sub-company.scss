@@ -1,0 +1,14 @@
+@use 'global' as *;
+
+.sub-company {
+    margin-top: rem(289);
+    margin-bottom: rem(194);
+    @include mq() {
+        margin-top: rem(144);
+        margin-bottom: rem(97);
+    }
+}
+
+.sub-company__label {
+    margin-top: calc(rem(118) - rem(91));
+}

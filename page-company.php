@@ -79,4 +79,56 @@
     </div>
 </section>
 
+<section class="sub-company">
+    <div class="sub-company__inner inner">
+        <div class="sub-company__title">
+            <h2 class="section-title txt"><span>company</span>会社概要</h2>
+        </div>
+        <dl class="sub-company__label label-list">
+            <div class="label-list__item label">
+                <dt class="label__left">
+                    <p class="label__title txt">会社名</p>
+                </dt>
+                <dd class="label__right">
+                    <p class="label__text txt">株式会社MC works</p>
+                </dd>
+            </div>
+            <div class="label-list__item label">
+                <dt class="label__left">
+                    <p class="label__title txt">事業内容</p>
+                </dt>
+                <dd class="label__right">
+                    <p class="label__text txt">一般建設業　建築設計・施工</p>
+                </dd>
+            </div>
+            <div class="label-list__item label">
+                <dt class="label__left">
+                    <p class="label__title txt">設立</p>
+                </dt>
+                <dd class="label__right">
+                    <p class="label__text txt">R3.9.28</p>
+                </dd>
+            </div>
+            <div class="label-list__item label">
+                <dt class="label__left">
+                    <p class="label__title txt">許可登録</p>
+                </dt>
+                <dd class="label__right">
+                    <p class="label__text txt">福井県知事許可　第7110号　二級建築士　登録年月日　平成19年1年30日</p>
+                </dd>
+            </div>
+            <div class="label-list__item label">
+                <dt class="label__left">
+                    <p class="label__title txt">住宅瑕疵担保責任保険</p>
+                </dt>
+                <dd class="label__right">
+                    <p class="label__text txt">住宅瑕疵担保責任保険法人　ハウスプラス住宅安心保証</p>
+                </dd>
+            </div>
+        </dl>
+    </div>
+</section>
+
+<?php get_template_part('template/contact'); ?>
+
 <?php get_footer(); ?>

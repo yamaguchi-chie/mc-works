@@ -1,0 +1,5 @@
+@use 'global' as *;
+
+.label-list__item {
+    border-bottom: 1px solid $main-black;
+}

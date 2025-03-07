@@ -1,0 +1,23 @@
+@use 'global' as *;
+
+.label {
+    display: flex;
+    gap: rem(36);
+    padding: rem(91) rem(16) rem(37);
+}
+
+.label__left {
+    width: rem(224);
+}
+
+.label__title {
+    color: $black;
+}
+
+.label__right {
+    width: calc(100% - rem(224) - rem(36));
+}
+
+.label__text {
+    
+}
