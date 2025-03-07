@@ -9,7 +9,7 @@
                 <dl class="form-rows">
                     <div class="form-rows__item form-row">
                         <dt class="form-row__text txt">
-                            <label for="your-name" class="form-row__required">会社名</label>
+                            <label for="your-name">会社名</label>
                         </dt>
                         <dd class="form-row__input txt">
                             <input type="text" id="your-name" placeholder="例：株式会社OOOO"><span class="form-row__hover"></span>
@@ -25,7 +25,7 @@
                     </div>
                     <div class="form-rows__item form-row">
                         <dt class="form-row__text txt">
-                            <label for="your-tel" class="form-row__required">電話番号</label>
+                            <label for="your-tel">電話番号</label>
                         </dt>
                         <dd class="form-row__input txt">
                             <input type="tel" id="your-tel" placeholder="例：00-000-0000" required><span class="form-row__hover"></span>

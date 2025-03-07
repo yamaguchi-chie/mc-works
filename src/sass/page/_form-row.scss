@@ -7,8 +7,9 @@
     padding: rem(40) rem(40) rem(40) rem(16);
     
     @include mq() {
-        // padding: 0;
+        padding: rem(32) rem(8) rem(32);
         flex-direction: column;
+        gap: rem(12);
     }
 }
 
@@ -18,6 +19,9 @@
 
 .form-row--start .form-row__text {
     margin-top: rem(21);
+    @include mq() {
+        margin-top: rem(8);
+    }
 }
 
 .form-row__text {
@@ -26,8 +30,6 @@
 
     @include mq() {
         width: 100%;
-        padding: rem(16) rem(9) rem(16) rem(22);
-        margin-bottom: rem(14);
     }
 }
 
@@ -36,7 +38,6 @@
     padding-right: calc(rem(7) + rem(26));
 
     @include mq() {
-        padding: 0;
     }
 }
 
@@ -70,10 +71,6 @@ input {
     font-family: inherit;
     outline: none;
     transition: all .3s ease 0s;
-}
-
-[type="submit"]:hover {
-
 }
 
 [type="text"],
