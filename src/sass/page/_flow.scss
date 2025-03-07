@@ -1,0 +1,46 @@
+@use 'global' as *;
+
+.flow {
+    margin-top: rem(257);
+    @include mq() {
+        margin-top: rem(123);
+    }
+}
+
+.flow__inner {
+
+}
+
+.inner {
+
+}
+
+.flow__title {
+
+}
+
+.flow__items {
+    margin: rem(94) auto 0;
+    max-width: rem(522);
+}
+
+.flow__item {
+    display: flex;
+    gap: rem(149);
+}
+
+.flow__item + .flow__item {
+    margin-top: rem(64);
+}
+
+.flow__number {
+    font-size: rem(32);
+    font-weight: $bold;
+    line-height: calc(32 / 28);
+    font-family: $second-font-family;
+}
+
+.flow__txt {
+    font-size: rem(24);
+    line-height: calc(28 / 24);
+}

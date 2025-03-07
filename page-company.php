@@ -29,4 +29,54 @@
     </div>
 </section>
 
+<section class="flow">
+    <div class="flow__inner inner">
+        <div class="flow__title">
+            <h2 class="section-title txt"><span>flow</span>家づくりの流れ</h2>
+        </div>
+        <ul class="flow__items">
+            <li class="flow__item">
+                <span class="flow__number">01</span>
+                <p class="flow__txt">ご相談・ヒアリング</p>
+            </li>
+            <li class="flow__item">
+                <span class="flow__number">02</span>
+                <p class="flow__txt">敷地・建物等の調査</p>
+            </li>
+            <li class="flow__item">
+                <span class="flow__number">03</span>
+                <p class="flow__txt">プランニング・デザイン提案</p>
+            </li>
+            <li class="flow__item">
+                <span class="flow__number">04</span>
+                <p class="flow__txt">業務委託契約</p>
+            </li>
+            <li class="flow__item">
+                <span class="flow__number">05</span>
+                <p class="flow__txt">実施設計開始（本設計）</p>
+            </li>
+            <li class="flow__item">
+                <span class="flow__number">06</span>
+                <p class="flow__txt">本見積もり提出</p>
+            </li>
+            <li class="flow__item">
+                <span class="flow__number">07</span>
+                <p class="flow__txt">工事請負契約（建築の本契約）</p>
+            </li>
+            <li class="flow__item">
+                <span class="flow__number">08</span>
+                <p class="flow__txt">建築確認申請</p>
+            </li>
+            <li class="flow__item">
+                <span class="flow__number">09</span>
+                <p class="flow__txt">工事着工</p>
+            </li>
+            <li class="flow__item">
+                <span class="flow__number">10</span>
+                <p class="flow__txt">引き渡し・アフターフォロー</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
 <?php get_footer(); ?>
