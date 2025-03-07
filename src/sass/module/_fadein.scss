@@ -12,16 +12,3 @@
     opacity: 1;
     transform: translateY(0);
 }
-
-/* アニメーションの基本スタイル */
-.fade-left {
-    opacity: 0; /* 初期状態で非表示 */
-    transform: translateX(20px); /* 下から少し上がる */
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-/* JavaScript でクラスを追加した時のスタイル */
-.fade-left.appear {
-    opacity: 1;
-    transform: translateY(0);
-}

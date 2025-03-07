@@ -23,11 +23,11 @@
           <!-- PCナビメニュー -->
           <nav class="header__pc-nav pc-nav">
             <ul class="pc-nav__items">
-              <li class="pc-nav__item"><a href="<?php echo esc_url(home_url()); ?>">top</a></li>
-              <li class="pc-nav__item"><a href="<?php echo esc_url(home_url("company")); ?>">company</a></li>
-              <li class="pc-nav__item"><a href="<?php echo esc_url(home_url("works")); ?>">works</a></li>
-              <li class="pc-nav__item"><a href="<?php echo esc_url(home_url("news")); ?>">news</a></li>
-              <li class="pc-nav__item"><a href="<?php echo esc_url(home_url("contact")); ?>">contact</a></li>
+              <li class="pc-nav__item fade-in"><a href="<?php echo esc_url(home_url()); ?>">top</a></li>
+              <li class="pc-nav__item fade-in"><a href="<?php echo esc_url(home_url("company")); ?>">company</a></li>
+              <li class="pc-nav__item fade-in"><a href="<?php echo esc_url(home_url("works")); ?>">works</a></li>
+              <li class="pc-nav__item fade-in"><a href="<?php echo esc_url(home_url("news")); ?>">news</a></li>
+              <li class="pc-nav__item fade-in"><a href="<?php echo esc_url(home_url("contact")); ?>">contact</a></li>
             </ul>
           </nav>
         </div>
@@ -42,11 +42,11 @@
     <!-- ドロワーメニュー -->
     <nav class="sp-nav">
       <ul class="sp-nav__items">
-        <li class="sp-nav__item"><a href="<?php echo esc_url(home_url()); ?>">top</a></li>
-        <li class="sp-nav__item"><a href="<?php echo esc_url(home_url("company")); ?>">company</a></li>
-        <li class="sp-nav__item"><a href="<?php echo esc_url(home_url("works")); ?>">works</a></li>
-        <li class="sp-nav__item"><a href="<?php echo esc_url(home_url("news")); ?>">news</a></li>
-        <li class="sp-nav__item"><a href="<?php echo esc_url(home_url("contact")); ?>">contact</a></li>
+        <li class="sp-nav__item fade-in"><a href="<?php echo esc_url(home_url()); ?>">top</a></li>
+        <li class="sp-nav__item fade-in"><a href="<?php echo esc_url(home_url("company")); ?>">company</a></li>
+        <li class="sp-nav__item fade-in"><a href="<?php echo esc_url(home_url("works")); ?>">works</a></li>
+        <li class="sp-nav__item fade-in"><a href="<?php echo esc_url(home_url("news")); ?>">news</a></li>
+        <li class="sp-nav__item fade-in"><a href="<?php echo esc_url(home_url("contact")); ?>">contact</a></li>
       </ul>
     </nav>
   <main class="sec-block">
