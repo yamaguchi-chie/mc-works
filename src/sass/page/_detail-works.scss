@@ -5,7 +5,7 @@
     margin-bottom: rem(68);
     @include mq() {
         margin-top: rem(132);
-        margin-bottom: rem(34);
+        margin-bottom: rem(100);
     }
 }
 
@@ -34,6 +34,10 @@
     font-size: rem(36);
     font-weight: $semi-bold;
     line-height: calc(50 / 36);
+    @include mq() {
+        font-size: rem(28);
+        margin-bottom: rem(17);
+    }
 }
 
 .detail-works__thumbs {
@@ -55,6 +59,16 @@
 .detail-works__item {
     display: flex;
     gap: rem(24);
+    @include mq() {
+        flex-direction: column;
+        gap: rem(4);
+    }
+}
+
+.detail-works__item + .detail-works__item {
+    @include mq() {
+        margin-top: rem(32);
+    }
 }
 
 .detail-works__left {
