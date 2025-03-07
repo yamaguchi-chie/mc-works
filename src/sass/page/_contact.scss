@@ -1,8 +1,14 @@
 @use 'global' as *;
 
 .contact {
-    margin-top: rem(86);
-    margin-bottom: rem(121);
+    padding-top: rem(86);
+    padding-bottom: rem(121);
+    margin-bottom: rem(101);
+    @include mq() {
+        padding-top: rem(43);
+        padding-bottom: rem(60);
+        margin-bottom: rem(50);
+    }
 }
 
 .contact__body {
@@ -10,6 +16,12 @@
     max-width: rem(903);
     display: flex;
     justify-content: space-between;
+    @include mq() {
+        margin-top: rem(35);
+        align-items: center;
+        flex-direction: column;
+        gap: rem(32);
+    }
 }
 
 .contact__contents {
@@ -19,9 +31,16 @@
 .contact__txt {
     font-size: rem(18);
     line-height: calc(40 / 18);
+    @include mq() {
+        text-align: center;
+    }
 }
 
 .contact__btn {
     max-width: rem(318);
     width: rem(318);
+    @include mq() {
+        width: 100%;
+        max-width: rem(350);
+    }
 }

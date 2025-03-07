@@ -1,8 +1,10 @@
 @use 'global' as *;
 
 .footer {
+    padding-top: rem(50);
     margin-bottom: rem(70);
     @include mq() {
+        padding-top: rem(25);
         margin-bottom: rem(20);
     }
 }
