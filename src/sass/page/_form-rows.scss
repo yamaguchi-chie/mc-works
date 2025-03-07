@@ -1,0 +1,9 @@
+@use 'global' as *;
+
+.form-rows__item + .form-rows__item {
+    border-top: 1px solid $gray;
+}
+
+.form-rows__item:last-child {
+    border-bottom: 1px solid $gray;
+}
