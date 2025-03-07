@@ -18,7 +18,11 @@
                 $the_query->the_post(); ?>
                 <li class="works__item">
                     <a href="<?php the_permalink(); ?>" class="works__link">
+                        <?php if(has_post_thumbnail()){
+                        the_post_thumbnail('full', array('alt' => get_the_title()));
+                        }else{ ;?>
                         <img src="<?php echo get_template_directory_uri(); ?>/dist/assets/images/works/1.webp" alt="" width="524" height="323" loading="lazy" decoding="async">
+                        <?php } ;?>
                         <div class="works__contents">
                             <p class="works__subTl"><?php the_title(); ?></p>
                         </div>

@@ -10,7 +10,7 @@
             <?php if(has_post_thumbnail()){
             the_post_thumbnail('full', array('alt' => get_the_title()));
             }else{ ;?>
-            <img src="<?php echo get_template_directory_uri(); ?>/img/no_image.jpg" alt="no image">
+            <img src="<?php echo get_template_directory_uri(); ?>/dist/assets/images/works/1.webp" alt="" width="524" height="323" loading="lazy" decoding="async">
             <?php } ;?>
           </div>
             <dl class="detail-works__label">
