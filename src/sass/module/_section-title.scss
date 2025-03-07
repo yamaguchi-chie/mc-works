@@ -4,6 +4,9 @@
     margin-top: rem(16);
     text-align: center;
     letter-spacing: 0.4em;
+    @include mq() {
+        font-size: rem(14);
+    }
 }
 
 .section-title span {
@@ -13,6 +16,9 @@
     line-height: calc(50 / 43);
     letter-spacing: 0em;
     font-family: $second-font-family;
+    @include mq() {
+        font-size: rem(40);
+    }
 }
 
 .section-title--contact {

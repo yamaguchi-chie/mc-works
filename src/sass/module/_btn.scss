@@ -14,6 +14,9 @@
     transition: all .3s ease 0s;
     cursor: pointer;
     border: 1px solid $main-black;
+    @include mq() {
+        padding: rem(9) rem(15);
+    }
 }
 
 .btn:hover {

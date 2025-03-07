@@ -3,6 +3,9 @@
 .page-title {
     text-align: center;
     letter-spacing: 0.4em;
+    @include mq() {
+        font-size: rem(14);
+    }
 }
 
 .page-title span {
@@ -12,4 +15,8 @@
     font-size: rem(64);
     line-height: calc(50 / 64);
     letter-spacing: 0em;
+    @include mq() {
+        margin-bottom: rem(16);
+        font-size: rem(54);
+    }
 }
