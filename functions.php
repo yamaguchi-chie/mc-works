@@ -25,6 +25,7 @@ add_action( 'after_setup_theme', 'my_setup' );
 
 function my_script_init() {
     wp_enqueue_style('noto-sans', '//fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&display=swap');
+    wp_enqueue_style('noto-sans-jp', '//fonts.googleapis.com/css2?family=Lusitana&family=Noto+Sans+JP:wght@100..900&display=swap');
     wp_enqueue_style("my", get_template_directory_uri() . "/dist/assets/css/style.css", array(), filemtime(get_theme_file_path('dist/assets/css/style.css')), "all");
     wp_enqueue_script("my", get_template_directory_uri() . "/dist/assets/js/script.js", array("jquery"), filemtime(get_theme_file_path('dist/assets/js/script.js')), true);
   }
