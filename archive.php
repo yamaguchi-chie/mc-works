@@ -2,7 +2,7 @@
 
 <section class="works">
     <div class="works__inner inner">
-        <div class="works__title">
+        <div class="works__title fade-in">
         <h1 class="page-title txt"><span>works</span>施工実績</h1>
         </div>
         <div class="works__body">
@@ -16,7 +16,7 @@
                 if ($the_query->have_posts()):
                 while($the_query->have_posts()) :
                 $the_query->the_post(); ?>
-                <li class="works__item">
+                <li class="works__item fade-in">
                     <a href="<?php the_permalink(); ?>" class="works__link">
                         <?php if(has_post_thumbnail()){
                         the_post_thumbnail('full', array('alt' => get_the_title()));

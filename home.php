@@ -1,14 +1,14 @@
 <?php get_header(); ?>
 <section class="sub-news">
     <div class="sub-news__inner inner">
-        <div class="sub-news__title">
+        <div class="sub-news__title fade-in">
         <h1 class="page-title txt"><span>news</span>お知らせ</h1>
         </div>
         <div class="sub-news__body">
             <ul class="sub-news__list">
                 <?php if (have_posts()): ?>
                 <?php while(have_posts()) : the_post(); ?>
-                    <li class="sub-news__item">
+                    <li class="sub-news__item fade-in">
                         <article>
                             <div class="sub-news__meta">
                                 <time datetime="<?php the_time('c'); ?>"><?php the_time('Y/n/j'); ?></time>
@@ -20,7 +20,7 @@
                 <?php endwhile; ?>
                 <?php endif; ?>
             </ul>
-            <div class="sub-news__pagenation">
+            <div class="sub-news__pagenation fade-in">
                 
             </div>
         </div>

@@ -1,0 +1,9 @@
+@use 'global' as *;
+
+.sec-block {
+    margin-top: calc(rem(127) + rem(8));
+
+    @include mq() {
+        margin-top: rem(70);
+    }
+}

@@ -1,11 +1,11 @@
 <?php get_header(); ?>
 
-<div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/dist/assets/images/common/logo_big.svg" alt="" width="" height="" loading="lazy" decoding="async"></div>
+<div class="logo fade-in"><img src="<?php echo get_template_directory_uri(); ?>/dist/assets/images/common/logo_big.webp" alt="" width="" height="" loading="lazy" decoding="async"></div>
 
 
 <section class="top-news">
     <div class="top-news__inner inner">
-        <div class="top-news__title">
+        <div class="top-news__title fade-in">
             <h2 class="section-title txt"><span>news</span>お知らせ</h2>
         </div>
         <ul class="top-news__items">
@@ -18,7 +18,7 @@
             if ($the_query->have_posts()):
             while($the_query->have_posts()) :
             $the_query->the_post(); ?>
-                <li class="top-news__item">
+                <li class="top-news__item fade-in">
                     <div class="top-news__meta">
                         <time datetime="<?php the_time('c'); ?>" class="top-news__time"><?php the_time('Y.n.j'); ?></time>
                     </div>
@@ -29,7 +29,7 @@
             <?php endwhile; endif; ?>
             <?php wp_reset_postdata(); ?>
         </ul>
-        <div class="top-news__btn">
+        <div class="top-news__btn fade-in">
             <a href="<?php echo esc_url(home_url("news")); ?>" class="btn btn--contact">more</a>
         </div>
     </div>

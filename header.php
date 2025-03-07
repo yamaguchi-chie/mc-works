@@ -11,7 +11,7 @@
 
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
-
+  <div class="main-wrap">
     <!-- header  -->
    <header class="header js-header">
       <div class="header__inner">
@@ -49,3 +49,4 @@
         <li class="sp-nav__item"><a href="<?php echo esc_url(home_url("contact")); ?>">contact</a></li>
       </ul>
     </nav>
+  <main class="sec-block">
