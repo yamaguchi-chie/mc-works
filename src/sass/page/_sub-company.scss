@@ -11,4 +11,10 @@
 
 .sub-company__label {
     margin-top: calc(rem(118) - rem(91));
+    @include mq() {
+        margin-top: calc(rem(59) - rem(48));
+        margin-right: auto;
+        margin-left: auto;
+        max-width: rem(650);
+    }
 }
