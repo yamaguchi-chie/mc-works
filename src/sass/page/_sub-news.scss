@@ -73,6 +73,7 @@
 
 .sub-news__pagenation {
     margin-top: rem(149);
+    text-align: center;
     @include mq() {
         margin-top: rem(74);
     }

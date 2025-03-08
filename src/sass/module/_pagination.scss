@@ -1,0 +1,22 @@
+@use 'global' as *;
+
+.wp-pagenavi {
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+}
+
+.wp-pagenavi a,
+.wp-pagenavi span {
+    font-size: rem(21);
+    font-weight: $bold;
+    line-height: calc(29 / 21);
+    font-family: $second-font-family;
+    @include mq() {
+        font-size: rem(18);
+    }
+}
+
+.wp-pagenavi span.current {
+    color: $accent;
+}

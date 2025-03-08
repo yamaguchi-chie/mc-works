@@ -31,6 +31,12 @@
                 <?php endwhile; endif; ?>
                 <?php wp_reset_postdata(); ?>
             </ul>
+            <div class="works__pagination pagination fade-in">
+                <?php wp_pagenavi(); ?>
+            </div>
+            <div class="works__btn fade-in">
+                <a href="<?php echo esc_url(home_url()); ?>" class="btn btn--works">TOPへ戻る</a>
+            </div>
         </div>
     </div>
 </section>

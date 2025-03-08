@@ -20,8 +20,8 @@
                 <?php endwhile; ?>
                 <?php endif; ?>
             </ul>
-            <div class="sub-news__pagenation fade-in">
-                
+            <div class="sub-news__pagenation pagination fade-in">
+                <?php wp_pagenavi(); ?>
             </div>
         </div>
     </div>

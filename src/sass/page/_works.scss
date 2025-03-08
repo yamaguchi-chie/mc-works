@@ -21,7 +21,7 @@
     margin-top: rem(265);
 
     @include mq() {
-        margin-top: rem(140);
+        margin-top: rem(80);
     }
 }
 
@@ -82,9 +82,23 @@
     line-height: calc(28 / 24);
     @include mq() {
         text-align: left;
+        font-size: rem(20);
     }
 }
 
 .works__link:hover .works__contents {
     opacity: 1;
+}
+
+.works__pagination {
+    margin-top: rem(149);
+    text-align: center;
+    @include mq() {
+        margin-top: rem(96);
+    }
+}
+
+.works__btn {
+    max-width: rem(200);
+    margin: rem(54) auto 0;
 }

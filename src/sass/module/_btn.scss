@@ -34,3 +34,11 @@
     font-family: $base-font-family;
     padding: rem(12) rem(15) rem(11);
 }
+
+.btn--works {
+    font-family: $base-font-family;
+    @include mq() {
+        font-size: rem(15);
+        padding: rem(6) rem(15);
+    }
+}
