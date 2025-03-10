@@ -39,6 +39,9 @@ function add_custom_post() {
     'works',
     array(
       'label' => '施工実績',
+      'labels' => array(
+        'add_new_item' => '新規施工実績を追加',
+      ),
       'public' => true,
       'has_archive' => true,
       // ブロックエディターを有効化するするかどうか
@@ -55,7 +58,8 @@ function add_custom_post() {
         'custom-fields',
         'page-attributes',
         'author',
-      )
+      ),
+      'menu_icon' => 'dashicons-admin-appearance',
     )
   );
 }
@@ -84,48 +88,61 @@ function add_taxonomy() {
       // ブロックエディターの管理画面に出力するかどうか
       'show_in_rest' => true,
       // カスタムタクソノミーに階層を持たせるか
-      'hierarchical' => true
+      'hierarchical' => true,
     )
   );
 }
 add_action('init', 'add_taxonomy');
 
+/* ------------------------------------------------------------------------------
+「投稿」の表記変更
+------------------------------------------------------------------------------ */
+function Change_menulabel() {
+  global $menu;
+  global $submenu;
+  $name = 'お知らせ';
+  $menu[5][0] = $name;
+  $submenu['edit.php'][5][0] = $name.'一覧';
+  $submenu['edit.php'][10][0] = '新規'.$name.'投稿';
+}
+function Change_objectlabel() {
+  global $wp_post_types;
+  $name = 'お知らせ';
+  $labels = &$wp_post_types['post']->labels;
+  $labels->name = $name;
+  $labels->singular_name = $name;
+  $labels->add_new = _x('追加', $name);
+  $labels->add_new_item = $name.'の新規追加';
+  $labels->edit_item = $name.'の編集';
+  $labels->new_item = '新規'.$name;
+  $labels->view_item = $name.'を表示';
+  $labels->search_items = $name.'を検索';
+  $labels->not_found = $name.'が見つかりませんでした';
+  $labels->not_found_in_trash = 'ゴミ箱に'.$name.'は見つかりませんでした';
+}
+add_action( 'init', 'Change_objectlabel' );
+add_action( 'admin_menu', 'Change_menulabel' );
 
-  //ページネーション
-  // function add_prev_post_link_class($output) {
-  //   return str_replace('<a href=', '<a class="pagination__link txt" href=', $output); 
-  //   }
-  //   add_filter( 'previous_post_link', 'add_prev_post_link_class' );
-  //   function add_next_post_link_class($output) {
-  //   return str_replace('<a href=', '<a class="pagination__link txt" href=', $output); 
-  //   }
-  //   add_filter( 'next_post_link', 'add_next_post_link_class' );
-
-//   // pタグとbrタグの自動挿入を解除
-//   remove_filter('the_content', 'wpautop');
+/* ------------------------------------------------------------------------------
+管理画面のデザイン変更
+------------------------------------------------------------------------------ */
+// add_action( 'init', 'custom_post_type' );
+// function custom_post_type() {
+//   register_post_type( 'works',
+//     array(
+//       // 'labels' => array(
+//       //   'name' => __( 'コラム' ),
+//       //   'singular_name' => __( 'コラム' ),
+//       //   'add_new' => _x('新規追加', 'コラム'),
+//       //   'add_new_item' => __('新規追加')
+//       // ),
+//       // 'public' => true,
+//       // 'has_archive' => true,
+//       // 'hierarchical' => false,
+//       // 'menu_position' =>5,
+//       'menu_icon' => 'dashicons-admin-appearance',
+//       // 'supports' => array('title','editor','thumbnail','revisions')
+//     )
+//   );
 // }
-
-  // function my_preget_posts($query) {
-  //   if (is_admin() || ! $query->is_main_query()){
-  //     return;
-  //   }
-  //   if ($query->is_post_type_archive('works')) {
-  //      $query->set('posts_per_page', 3);
-  //      // $query->set('posts_per_page', 設定したい最大表示件数)
-  //      return;
-  //   }
-  //   if ($query->is_front_page()) {
-  //      $query->set('posts_per_page', 3);
-  //      // $query->set('posts_per_page', 設定したい最大表示件数)
-  //      return;
-  //   }
-  // }
-  // add_action('pre_get_posts', 'my_preget_posts');
-
-  // //メタ
-  // function my_title_separator($separator) {
-  //   $separator = '|';
-  //   return $separator;
-  // }
-  // add_filter('document_title_separator', 'my_title_separator');
 ?>
