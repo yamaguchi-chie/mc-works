@@ -35,6 +35,10 @@
     padding: rem(12) rem(15) rem(11);
 }
 
+.btn--not-found {
+    font-family: $base-font-family;
+}
+
 .btn--works {
     font-family: $base-font-family;
     @include mq() {

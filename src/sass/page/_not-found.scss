@@ -1,0 +1,35 @@
+@use 'global' as *;
+
+.not-found {
+    margin-top: rem(180);
+    margin-bottom: rem(250);
+    @include mq() {
+        margin-top: rem(143);
+        margin-bottom: rem(180);
+    }
+}
+
+.not-found__inner {
+
+}
+
+.inner {
+
+}
+
+.not-found__title {
+    text-align: center;
+    font-size: rem(43);
+    font-weight: $bold;
+    @include mq() {
+        font-size: rem(30);
+    }
+}
+
+.not-found__btn {
+    max-width: rem(320);
+    margin: rem(64) auto 0;
+    @include mq() {
+        margin-top: rem(48);
+    }
+}

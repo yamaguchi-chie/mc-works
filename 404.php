@@ -1,12 +1,14 @@
 <?php get_header(); ?>
 
-  <div class="p-404">
-    <div class="p-404__inner l-inner">
-      <h2 class ="p-404__title c-common-title">お探しのページは見つかりませんでした。</h2>
-      <div class="p-404__btn">
-        <a class="c-btn" href="<?php page_path(''); ?>">TOPページへ</a>
-      </div>
+<div class="logo fade-in"><img src="<?php echo get_template_directory_uri(); ?>/dist/assets/images/common/logo_big.webp" alt="" width="" height="" loading="lazy" decoding="async"></div>
+
+ <section class="not-found">
+  <div class="not-found__inner inner">
+    <h1 class="not-found__title fade-in">お探しのページは<br class="u-mobile">見つかりませんでした。</h1>
+    <div class="not-found__btn fade-in">
+      <a class="btn btn--not-found" href="<?php echo esc_url(home_url()); ?>">topへ戻る</a>
     </div>
   </div>
-  
+ </section>
+
 <?php get_footer(); ?>
