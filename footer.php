@@ -11,13 +11,13 @@
       </ul>
     </nav>
     <div class="footer__body">
-      <div class="footer__logo fade-in"><img src="<?php echo get_template_directory_uri(); ?>/dist/assets/images/common/logo.webp" alt="" width="" height="" loading="lazy" decoding="async"></div>
+      <div class="footer__logo"><img src="<?php echo get_template_directory_uri(); ?>/dist/assets/images/common/logo.webp" alt="" width="" height="" loading="lazy" decoding="async"></div>
       <dl class="footer__adress">
-        <div class="fade-in">
+        <div class="">
           <dt class="footer__text">Head Office</dt>
           <dd class="footer__text">〒916-0085　福井県鯖江市大倉町17-2-3</dd>
         </div>
-        <div class="fade-in">
+        <div class="">
           <dt class="footer__text">Branch Office</dt>
           <dd class="footer__text">〒918-8067　福井県福井市飯塚町8-133</dd>
         </div>

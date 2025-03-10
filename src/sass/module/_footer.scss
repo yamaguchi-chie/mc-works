@@ -40,9 +40,14 @@
     font-weight: $semi-bold;
     padding-right: rem(16);
     padding-bottom: rem(20);
+    transition: all .3s ease 0s;
     @include mq() {
         padding: rem(10) rem(16);
     }
+}
+
+.footer__item a:hover {
+    color: $accent;
 }
 
 .footer__item + .footer__item a {
