@@ -11,7 +11,7 @@
       </ul>
     </nav>
     <div class="footer__body">
-      <div class="footer__logo"><img src="<?php echo get_template_directory_uri(); ?>/dist/assets/images/common/logo.webp" alt="" width="" height="" loading="lazy" decoding="async"></div>
+      <div class="footer__logo"><img src="<?php echo get_template_directory_uri(); ?>/dist/assets/images/common/logo.webp" alt="mc-worksのロゴを表した画像" width="" height="" loading="lazy" decoding="async"></div>
       <dl class="footer__adress">
         <div class="">
           <dt class="footer__text">Head Office</dt>

@@ -7,9 +7,12 @@
         </div>
         <div class="works__body">
             <ul class="works__list">
-                <?php $args = array(
+                <?php 
+                $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+                $args = array(
                 'post_type' => 'works',
                 'posts_per_page' => 6,
+                'paged' => $paged,
                 'order' => 'DESC',
                 );
                 $the_query = new WP_Query($args);
@@ -21,7 +24,7 @@
                         <?php if(has_post_thumbnail()){
                         the_post_thumbnail('full', array('alt' => get_the_title()));
                         }else{ ;?>
-                        <img src="<?php echo get_template_directory_uri(); ?>/dist/assets/images/works/1.webp" alt="" width="524" height="323" loading="lazy" decoding="async">
+                        <img src="<?php echo get_template_directory_uri(); ?>/dist/assets/images/works/1.webp" alt="no-image" width="524" height="323" loading="lazy" decoding="async">
                         <?php } ;?>
                         <div class="works__contents">
                             <p class="works__subTl"><?php the_title(); ?></p>
@@ -32,7 +35,7 @@
                 <?php wp_reset_postdata(); ?>
             </ul>
             <div class="works__pagination pagination fade-in">
-                <?php wp_pagenavi(); ?>
+                <?php wp_pagenavi(array('query' => $the_query)); ?>
             </div>
             <div class="works__btn fade-in">
                 <a href="<?php echo esc_url(home_url()); ?>" class="btn btn--works">TOPへ戻る</a>

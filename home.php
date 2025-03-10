@@ -11,7 +11,7 @@
                     <li class="sub-news__item fade-in">
                         <article>
                             <div class="sub-news__meta">
-                                <time datetime="<?php the_time('c'); ?>"><?php the_modified_date('Y.m.d'); ?></time>
+                                <time datetime="<?php the_time('c'); ?>"><?php the_time('Y.m.d'); ?></time>
                                 <p class="sub-news__subTl"><?php the_title(); ?></p>
                             </div>
                             <div class="sub-news__contents txt"><?php the_content(); ?></div>

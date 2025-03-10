@@ -17,6 +17,7 @@
     font-weight: $bold;
     line-height: calc(50 / 64);
     letter-spacing: 0em;
+    font-family: $second-font-family;
     @include mq() {
         margin-bottom: rem(16);
         font-size: rem(54);

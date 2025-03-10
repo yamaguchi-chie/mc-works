@@ -24,9 +24,11 @@
 }
 
 .header__inner {
+    margin-top: rem(-8);
     padding: 0 rem(35);
     height: inherit;
     @include mq() {
+        margin-top: 0;
         padding-left: rem(20);
         padding-right: 0;
         padding-bottom: 5px;

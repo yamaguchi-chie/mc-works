@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="logo fade-in"><img src="<?php echo get_template_directory_uri(); ?>/dist/assets/images/common/logo_big.webp" alt="" width="" height="" loading="lazy" decoding="async"></div>
+<div class="logo fade-in"><img src="<?php echo get_template_directory_uri(); ?>/dist/assets/images/common/logo_big.webp" alt="mc-worksのロゴを表した画像" width="" height="" loading="lazy" decoding="async"></div>
 
 
 <section class="top-news">
@@ -20,7 +20,7 @@
             $the_query->the_post(); ?>
                 <li class="top-news__item fade-in">
                     <div class="top-news__meta">
-                        <time datetime="<?php the_time('c'); ?>" class="top-news__time"><?php the_modified_date('Y.m.d'); ?></time>
+                        <time datetime="<?php the_time('c'); ?>" class="top-news__time"><?php the_time('Y.m.d'); ?></time>
                     </div>
                     <div class="news__contents">
                         <p class="top-news__txt txt"><?php

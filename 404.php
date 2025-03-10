@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="logo fade-in"><img src="<?php echo get_template_directory_uri(); ?>/dist/assets/images/common/logo_big.webp" alt="" width="" height="" loading="lazy" decoding="async"></div>
+<div class="logo fade-in"><img src="<?php echo get_template_directory_uri(); ?>/dist/assets/images/common/logo_big.webp" alt="mc-worksのロゴを表した画像" width="" height="" loading="lazy" decoding="async"></div>
 
  <section class="not-found">
   <div class="not-found__inner inner">

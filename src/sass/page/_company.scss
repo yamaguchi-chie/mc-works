@@ -14,7 +14,11 @@
     aspect-ratio: 1438/599;
     background: transparent url(../images/company/bg.webp) no-repeat center center / cover;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     @include mq() {
+        display: block;
         margin-top: rem(120);
         padding: rem(63) 20px rem(61);
     }
