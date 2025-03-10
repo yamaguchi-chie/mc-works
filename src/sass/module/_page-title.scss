@@ -3,6 +3,7 @@
 .page-title {
     text-align: center;
     letter-spacing: 0.4em;
+    font-weight: $regular;
     @include mq() {
         font-size: rem(14);
     }
@@ -13,6 +14,7 @@
     display: block;
     text-transform: uppercase;
     font-size: rem(64);
+    font-weight: $bold;
     line-height: calc(50 / 64);
     letter-spacing: 0em;
     @include mq() {

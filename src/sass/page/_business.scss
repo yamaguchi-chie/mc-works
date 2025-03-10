@@ -50,7 +50,7 @@
 
 .business__txt {
     margin-top: rem(43);
-    letter-spacing: 0.01em;
+    letter-spacing: 0.1em;
     @include mq() {
         margin-top: rem(24);
     }

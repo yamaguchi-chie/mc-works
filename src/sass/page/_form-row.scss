@@ -69,8 +69,14 @@ input {
     box-shadow: none;
     color: inherit;
     font-family: inherit;
+    font-weight: $light;
     outline: none;
     transition: all .3s ease 0s;
+}
+
+input::placeholder {
+    // color: rgba($color: $main-balck, $alpha: 0.27);
+    color: $placeholder;
 }
 
 [type="text"],

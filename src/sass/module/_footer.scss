@@ -76,7 +76,7 @@
 .footer__adress div {
     display: flex;
     align-items: center;
-    gap: rem(37);
+    // gap: rem(24);
     @include mq() {
         flex-direction: column;
         align-items: start;
@@ -88,6 +88,14 @@
     @include mq() {
         margin-top: rem(28);
     }
+}
+
+.footer__adress dt {
+    width: calc(rem(97) + rem(24));
+}
+
+.footer__adress dd {
+    width: calc(100% - calc(rem(97) + rem(24)));
 }
 
 .footer__text {

@@ -80,6 +80,7 @@
     text-align: center;
     font-size: rem(24);
     line-height: calc(28 / 24);
+    letter-spacing: 0.1em;
     @include mq() {
         text-align: left;
         font-size: rem(20);

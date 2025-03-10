@@ -20,10 +20,17 @@
             $the_query->the_post(); ?>
                 <li class="top-news__item fade-in">
                     <div class="top-news__meta">
-                        <time datetime="<?php the_time('c'); ?>" class="top-news__time"><?php the_time('Y.n.j'); ?></time>
+                        <time datetime="<?php the_time('c'); ?>" class="top-news__time"><?php the_modified_date('Y.m.d'); ?></time>
                     </div>
                     <div class="news__contents">
-                        <p class="top-news__txt txt"><?php the_content(); ?></p>
+                        <p class="top-news__txt txt"><?php
+                        if ( mb_strlen( $post->post_content, 'UTF-8' ) > 30 ) {
+                        $content = mb_substr( strip_tags( $post->post_content ), 0, 30, 'UTF-8' );
+                        echo $content . '…';
+                        } else {
+                        echo strip_tags( $post->post_content );
+                        }
+                        ?></p>
                     </div>
                 </li>
             <?php endwhile; endif; ?>

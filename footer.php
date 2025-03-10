@@ -6,7 +6,7 @@
         <li class="footer__item fade-in"><a href="<?php echo esc_url(home_url()); ?>">top</a></li>
         <li class="footer__item fade-in"><a href="<?php echo esc_url(home_url("company")); ?>">会社案内</a></li>
         <li class="footer__item fade-in"><a href="<?php echo esc_url(home_url("works")); ?>">施工実績</a></li>
-        <li class="footer__item fade-in"><a href="<?php echo esc_url(home_url("info")); ?>">お知らせ</a></li>
+        <li class="footer__item fade-in"><a href="<?php echo esc_url(home_url("news")); ?>">お知らせ</a></li>
         <li class="footer__item fade-in"><a href="<?php echo esc_url(home_url("contact")); ?>">お問い合わせ</a></li>
       </ul>
     </nav>
@@ -23,9 +23,9 @@
         </div>
       </dl>
     </div>
-    <div class="footer__copyright">
-      <small>&copy;MC Works</small>
-    </div>
+    <p class="footer__copyright">
+      &copy;MC Works
+    </p>
   </div>
 </footer>
 </div>

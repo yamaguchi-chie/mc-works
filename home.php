@@ -11,7 +11,7 @@
                     <li class="sub-news__item fade-in">
                         <article>
                             <div class="sub-news__meta">
-                                <time datetime="<?php the_time('c'); ?>"><?php the_time('Y/n/j'); ?></time>
+                                <time datetime="<?php the_time('c'); ?>"><?php the_modified_date('Y.m.d'); ?></time>
                                 <p class="sub-news__subTl"><?php the_title(); ?></p>
                             </div>
                             <div class="sub-news__contents txt"><?php the_content(); ?></div>
@@ -22,6 +22,9 @@
             </ul>
             <div class="sub-news__pagenation pagination fade-in">
                 <?php wp_pagenavi(); ?>
+            </div>
+            <div class="sub-news__btn fade-in">
+                <a href="<?php echo esc_url(home_url()); ?>" class="btn btn--works">TOPへ戻る</a>
             </div>
         </div>
     </div>
