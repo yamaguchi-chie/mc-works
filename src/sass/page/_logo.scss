@@ -1,7 +1,7 @@
 @use 'global' as *;
 
 .logo {
-    max-width: rem(438);
+    max-width: rem(564);
     margin: rem(189) auto rem(104);
     @include mq() {
         padding: 0 $padding-sp;

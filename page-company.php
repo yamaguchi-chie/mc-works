@@ -114,7 +114,7 @@
                     <p class="label__title txt">許可登録</p>
                 </dt>
                 <dd class="label__right">
-                    <p class="label__text txt">福井県知事許可　第7110号　二級建築士　登録年月日　平成19年1年30日</p>
+                    <p class="label__text txt">福井県知事許可　第11511号　二級建築士　登録年月日　平成19年1月31日</p>
                 </dd>
             </div>
             <div class="label-list__item label fade-in">
