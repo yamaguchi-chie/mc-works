@@ -51,6 +51,20 @@
     object-fit: cover;
 }
 
+.detail-works__contents {
+    margin-top: rem(80);
+    @include mq() {
+        margin-top: rem(48);
+    }
+}
+
+.detail-works__contents figure + figure {
+    margin-top: rem(48);
+    @include mq() {
+        margin-top: rem(24);
+    }
+}
+
 .detail-works__label {
     margin-top: rem(128);
     @include mq() {

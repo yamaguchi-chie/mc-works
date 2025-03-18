@@ -24,11 +24,11 @@
                     </div>
                     <div class="news__contents">
                         <p class="top-news__txt txt"><?php
-                        if ( mb_strlen( $post->post_content, 'UTF-8' ) > 30 ) {
-                        $content = mb_substr( strip_tags( $post->post_content ), 0, 30, 'UTF-8' );
-                        echo $content . '…';
+                        if ( mb_strlen( $post->post_title, 'UTF-8' ) > 30 ) {
+                        $title = mb_substr( $post->post_title, 0, 30, 'UTF-8' );
+                            echo $title . '…';
                         } else {
-                        echo strip_tags( $post->post_content );
+                            echo $post->post_title;
                         }
                         ?></p>
                     </div>

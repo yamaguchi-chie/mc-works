@@ -13,6 +13,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/dist/assets/images/works/1.webp" alt="no-image" width="524" height="323" loading="lazy" decoding="async">
             <?php } ;?>
           </div>
+            <div class="detail-works__contents"><?php the_content(); ?></div>
             <dl class="detail-works__label">
                 <div class="detail-works__item">
                     <dt class="detail-works__left">
