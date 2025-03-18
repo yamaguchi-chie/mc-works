@@ -66,7 +66,7 @@
                         </p>
                     </dd>
                 </div>
-                <div class="detail-works__item">
+                <!-- <div class="detail-works__item">
                     <dt class="detail-works__left">
                         <p class="txt">施工面積 : </p>
                     </dt>
@@ -78,7 +78,7 @@
                         <?php endif; ?>
                         </p>
                     </dd>
-                </div>
+                </div> -->
             </dl>
             <div class="detail-works__pagination">
                 <?php previous_post_link('%link', '前の実績へ'); ?>
