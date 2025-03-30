@@ -53,15 +53,11 @@
 
 .detail-works__contents {
     margin-top: rem(80);
+    display: flex;
+    gap: rem(90);
     @include mq() {
-        margin-top: rem(48);
-    }
-}
-
-.detail-works__contents figure + figure {
-    margin-top: rem(48);
-    @include mq() {
-        margin-top: rem(24);
+        margin-top: rem(32);
+        gap: rem(20);
     }
 }
 
