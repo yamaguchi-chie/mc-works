@@ -1,6 +1,12 @@
 <?php get_header(); ?>
 
-<div class="logo fade-in"><img src="<?php echo get_template_directory_uri(); ?>/dist/assets/images/common/logo_big.webp" alt="mc-worksのロゴを表した画像" width="" height="" loading="lazy" decoding="async"></div>
+<!-- <div class="logo fade-in"><img src="<?php echo get_template_directory_uri(); ?>/dist/assets/images/common/logo_big.webp" alt="mc-worksのロゴを表した画像" width="" height="" loading="lazy" decoding="async"></div> -->
+<div class="fv">
+    <picture>
+        <source srcset="<?php echo get_template_directory_uri(); ?>/dist/assets/images/common/fv.webp"media="(min-width: 768px)" />
+        <img src="<?php echo get_template_directory_uri(); ?>/dist/assets/images/common/fv_sp.webp" alt="MC works ひと想いの建築。">
+    </picture>
+</div>
 
 
 <section class="top-news">
