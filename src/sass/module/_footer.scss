@@ -96,6 +96,9 @@
 
 .footer__adress dd {
     width: calc(100% - calc(rem(97) + rem(24)));
+    @include mq() {
+        width: 100%;
+    }
 }
 
 .footer__text {
